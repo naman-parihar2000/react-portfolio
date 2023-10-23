@@ -126,7 +126,7 @@ const Services = () => {
             <h3 className="services__title">
               UI/UX
               <br />
-              Development
+              Design
             </h3>
           </div>
           <span className="services__button" onClick={() => toggleTab(1)}>

@@ -3,6 +3,13 @@ import "./Contact.css";
 
 const Contact = () => {
   const form = useRef();
+  const handleOpenGmailDraft = () => {
+    const subject = "Your subject here";
+    const body = "Your email body here";
+    const recipient = "namanp612@gmail.com";
+    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${subject}&body=${body}`;
+    window.open(mailtoLink);
+  };
 
   return (
     <section className="contact section" id="contact">
@@ -25,6 +32,15 @@ const Contact = () => {
                 Write Me...{" "}
               </a>
             </div>
+          </div>
+
+          <div>
+            <button
+              onClick={handleOpenGmailDraft}
+              className="button button--flex"
+            >
+              Gmail Me!
+            </button>
           </div>
         </div>
 
@@ -64,7 +80,7 @@ const Contact = () => {
             </div>
 
             <button href="#about" className="button button--flex">
-              Send Message
+              Send Message...
             </button>
           </form>
         </div>

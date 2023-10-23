@@ -16,6 +16,7 @@
   display: grid;
   row-gap: 1rem;
   grid-template-columns: 300px;
+  padding-bottom: 2rem;
 }
 
 .contact__card {
